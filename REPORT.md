@@ -40,8 +40,9 @@ Final model: `HistGradientBoostingClassifier` (500 iterations, lr 0.05,
 | always *typical* | 0.2488 | 0.0000 | 0.5953 |
 | official baseline | 0.5410 | 0.4576 | 0.5465 |
 | baseline features, our GBM settings | 0.5393 | 0.4598 | 0.5437 |
-| **ours: baseline + extended author history (no text)** | **0.5720** | **0.5101** | **0.5760** |
-| ours: + TF-IDF text probabilities | TBD | TBD | TBD |
+| ours: baseline + extended author history (no text) | 0.5720 | 0.5101 | 0.5760 |
+| text only (TF-IDF + LR) | 0.4518 | – | – |
+| **ours: history + text (final)** | **0.5935** | **0.5401** | **0.5976** |
 
 ## Discussion
 - The label is relative to the author, so raw popularity (followers, level) mostly
